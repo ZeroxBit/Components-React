@@ -9,13 +9,7 @@ import Icons from './Icons';
 import { validateUserAjax } from "../services/userServices";
 import { validateUSer, validateRules } from "../class/ValidatorInput";
 
-/* ------------------Inputs--------------------------- /
-del icono left {
-	iconTypeLeft = fuente 
-	iconLeftName = Nombre
-}
-*/
-// cambiar la parte de la validacion ajax!!!!!!!!!!
+
 export default class Inputs extends Component {
 
     constructor(props) {
@@ -62,7 +56,6 @@ export default class Inputs extends Component {
     };
 
     changeValue = value => {
-        //solucion 1
         this.setState((prevState, props) => {
             let inputs = {
                 inputValue: value,
@@ -71,24 +64,6 @@ export default class Inputs extends Component {
             props.changeValues(inputs);
             return { inputs };
         });
-
-        //solucion 2
-        /*let inputs = {
-                inputValue : value,
-                type : this.props.referens,
-            }
-            this.setState({inputs})
-            this.props.changeValues(inputs)    */
-
-        //solucion 3
-        /*this.setState({
-                inputs:{
-                    inputValue : value,
-                    type : this.props.referens,
-                }
-            },()=>{
-            this.props.changeValues(this.state.inputs) 
-            })*/
     };
 
     handleValidateStatus =(response)=>{
