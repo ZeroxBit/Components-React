@@ -24,37 +24,37 @@ export default class Icons extends Component {
         
         switch (iconType) {
             case 'FontAwesome':
-                return <FontAwesome             name = {iconName}     style = {iconStyle} />;
+                return <FontAwesome             name = {iconName}     style = {iconStyle} {...props}/>;
         
             case 'MaterialIcons':
-                return <MaterialIcons           name = {iconName}     style = {iconStyle} />;
+                return <MaterialIcons           name = {iconName}     style = {iconStyle} {...props}/>;
                 
             case 'MaterialCommunityIcons':
-                return <MaterialCommunityIcons  name = {iconName}     style = {iconStyle} />;
+                return <MaterialCommunityIcons  name = {iconName}     style = {iconStyle} {...props}/>;
         
             case 'Feather':
-                return <Feather                 name = {iconName}     style = {iconStyle} />;
+                return <Feather                 name = {iconName}     style = {iconStyle} {...props}/>;
         
             case 'Zocial':
-                return <Zocial                  name = {iconName}     style = {iconStyle} />;
+                return <Zocial                  name = {iconName}     style = {iconStyle} {...props}/>;
         
             case 'Ionicons':
-                return <Ionicons                name = {iconName}     style = {iconStyle} />;
+                return <Ionicons                name = {iconName}     style = {iconStyle} {...props}/>;
         
             case 'Foundation':
-                return <Foundation              name = {iconName}     style = {iconStyle} />;
+                return <Foundation              name = {iconName}     style = {iconStyle} {...props}/>;
         
             case 'Octicons':
-                return <Octicons                name = {iconName}     style = {iconStyle} />;
+                return <Octicons                name = {iconName}     style = {iconStyle} {...props}/>;
         
             case 'Entypo':
-                return <Entypo                  name = {iconName}     style = {iconStyle} />;
+                return <Entypo                  name = {iconName}     style = {iconStyle} {...props}/>;
         
             case 'EvilIcons':
-                return <EvilIcons               name = {iconName}     style = {iconStyle} />;
+                return <EvilIcons               name = {iconName}     style = {iconStyle} {...props}/>;
             
             case 'SimpleLineIcons':
-                return <SimpleLineIcons         name = {nameDefault}  style = {iconStyle} />;
+                return <SimpleLineIcons         name = {nameDefault}  style = {iconStyle} {...props}/>;
 
             default: return <Text>Error icon!!</Text>
         }
